@@ -60,7 +60,63 @@ function handleEvent(event) {
         "packageId": "446",
         "stickerId": "1988"  
       },
-      knowmore
+      {
+        "type": "flex",
+        "altText": "know more about me",
+        "contents": {
+            "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                "type": "text",
+                "text": "你想要問那些問題呢！",
+                "weight": "bold",
+                "size": "xl"
+                }
+            ]
+            },
+            "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+                {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                    "type": "message",
+                    "label": "你的大學在哪裡",
+                    "text": "大學位置"
+                }
+                },
+                {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                    "type": "message",
+                    "label": "為什麼想要申請這個計畫呢",
+                    "uri": "申請動機"
+                }
+                },
+                {
+                "type": "button",
+                "action": {
+                    "type": "uri",
+                    "label": "Album",
+                    "uri": "https://www.flickr.com/photos/195209755@N02/albums"
+                },
+                "height": "sm",
+                "style": "link"
+                }
+            ],
+            "flex": 0
+            }
+        }
+        }
+    
     ]
     return client.replyMessage(event.replyToken, multireply);
   }
