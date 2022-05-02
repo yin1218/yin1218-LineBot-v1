@@ -30,7 +30,7 @@ const documents = require('./message/Document.json');
 const knowmore = require('./message/Knowmore.json');
 const exception = require('./message/Exception.json');
 const firstMsg = require('./message/Init.json')
-const collegeLoca = require('./message/Loco.json')
+// const collegeLoca = require('./message/Loco.json')
 
 // event handler
 function handleEvent(event) {
@@ -69,9 +69,9 @@ function handleEvent(event) {
     return client.replyMessage(event.replyToken, multireply);
   }
 
-  else if(msg == "大學位置"){
-    echo = collegeLoca
-  }
+  // else if(msg == "大學位置"){
+  //   echo = collegeLoca
+  // }
 
   // else if(msg == "申請動機"){
 
