@@ -35,17 +35,17 @@
             "style": "link",
             "height": "sm",
             "action": {
-              "type": "message",
-              "label": "為什麼想要申請LINE Tech Fresh",
-              "text": "申請動機"
+              "type": "uri",
+              "label": "Github",
+              "uri": "https://github.com/yin1218"
             }
           },
           {
             "type": "button",
             "action": {
-              "type": "message",
-              "label": "自己最喜歡的特質有哪些",
-              "text": "優勢簡述"
+              "type": "uri",
+              "label": "Resume",
+              "uri": "https://drive.google.com/file/d/1ucen8T9KSt9F1-efkBs9GDsGbHRVmxtg/view?usp=sharing"
             },
             "height": "sm",
             "style": "link"
@@ -53,9 +53,9 @@
           {
             "type": "button",
             "action": {
-              "type": "text",
-              "label": "做過收穫最多的專案是什麼",
-              "text": "專案 No.1"
+              "type": "uri",
+              "label": "Album",
+              "uri": "https://www.flickr.com/photos/195209755@N02/albums"
             },
             "height": "sm",
             "style": "link"

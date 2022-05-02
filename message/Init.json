@@ -1,6 +1,6 @@
 {
     "type": "flex",
-    "altText": "this is a flex message",
+    "altText": "Init Message",
     "contents": {
       "type": "bubble",
       "hero": {
@@ -8,7 +8,7 @@
         "size": "full",
         "aspectRatio": "20:13",
         "aspectMode": "cover",
-        "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
+        "url": "https://live.staticflickr.com/65535/51939152642_4649f1a8ec_k.jpg"
       },
       "body": {
         "type": "box",
@@ -16,7 +16,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "看點東西再走吧！",
+            "text": "歡迎歡迎！你想要做什麼呢",
             "weight": "bold",
             "size": "xl"
           }
@@ -32,9 +32,9 @@
             "style": "link",
             "height": "sm",
             "action": {
-              "type": "uri",
-              "label": "Website",
-              "uri": "https://wpbag.vercel.app/"
+              "type": "text",
+              "label": "拿拿資料就走",
+              "text": "拿拿資料就走"
             }
           },
           {
@@ -46,26 +46,6 @@
               "label": "Github",
               "uri": "https://github.com/yin1218"
             }
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "Resume",
-              "uri": "https://drive.google.com/file/d/1ucen8T9KSt9F1-efkBs9GDsGbHRVmxtg/view?usp=sharing"
-            },
-            "height": "sm",
-            "style": "link"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "Album",
-              "uri": "https://www.flickr.com/photos/195209755@N02/albums"
-            },
-            "height": "sm",
-            "style": "link"
           }
         ],
         "flex": 0
