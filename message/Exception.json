@@ -1,41 +1,45 @@
 {
-    "type": "bubble",
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "我不太清楚你在說什麼QQ",
-          "size": "sm"
+    "type": "flex",
+    "altText": "know more about me",
+    "contents": {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "我不太清楚你在說什麼QQ",
+              "size": "sm"
+            },
+            {
+              "type": "text",
+              "text": "但你可以點選以下的按鈕"
+            },
+            {
+              "type": "text",
+              "text": "來了解可以做的操作"
+            }
+          ],
+          "borderColor": "#BB1324",
+          "cornerRadius": "none"
         },
-        {
-          "type": "text",
-          "text": "但你可以點選以下的按鈕"
-        },
-        {
-          "type": "text",
-          "text": "來了解可以做的操作"
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "color": "#905c44",
+              "margin": "xxl",
+              "action": {
+                "type": "message",
+                "label": "Start",
+                "text": "開始了解"
+              }
+            }
+          ]
         }
-      ],
-      "borderColor": "#BB1324",
-      "cornerRadius": "none"
-    },
-    "footer": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "button",
-          "style": "primary",
-          "color": "#905c44",
-          "margin": "xxl",
-          "action": {
-            "type": "message",
-            "label": "Start",
-            "text": "開始了解"
-          }
-        }
-      ]
+      }
     }
-  }
