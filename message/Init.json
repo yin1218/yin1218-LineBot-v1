@@ -32,9 +32,9 @@
             "style": "link",
             "height": "sm",
             "action": {
-              "type": "text",
-              "label": "拿拿資料就走",
-              "text": "拿拿資料就走"
+              "type": "uri",
+              "label": "Website",
+              "uri": "https://wpbag.vercel.app/"
             }
           },
           {
