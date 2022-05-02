@@ -31,6 +31,7 @@ const knowmore = require('./message/Knowmore.json');
 const exception = require('./message/Exception.json');
 const firstMsg = require('./message/Init.json')
 const collegeLoca = require('./message/CollegeLoco.json')
+const motivation = require('./message/Motivation.json')
 
 // event handler
 function handleEvent(event) {
@@ -73,9 +74,9 @@ function handleEvent(event) {
     echo = collegeLoca
   }
 
-  // else if(msg == "申請動機"){
+  else if(msg == "申請動機"){
 
-  // }
+  }
 
   // else if(msg == "優勢簡述"){
 
