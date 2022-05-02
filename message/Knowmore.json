@@ -1,22 +1,15 @@
 {
     "type": "flex",
-    "altText": "this is a flex message",
+    "altText": "know more about me",
     "contents": {
       "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover",
-        "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
-      },
       "body": {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
             "type": "text",
-            "text": "看點東西再走吧！",
+            "text": "想要知道什麼呢?",
             "weight": "bold",
             "size": "xl"
           }
@@ -32,9 +25,9 @@
             "style": "link",
             "height": "sm",
             "action": {
-              "type": "uri",
-              "label": "Website",
-              "uri": "https://wpbag.vercel.app/"
+              "type": "message",
+              "label": "你的大學在哪裡",
+              "text": "大學位置s"
             }
           },
           {
