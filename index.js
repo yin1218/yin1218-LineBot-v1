@@ -31,41 +31,30 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
   let msg = event.message.text
-  let echo = {}
+  let echo = {
+    "type": "text",
+    "text": msg
+  }
   //first
-  if(msg == "拿拿資料就走"){
-    //傳送想要拿什麼資訊的選單
-    echo = getInfo()
-  } 
-  else if(msg == "更深入的了解我是誰"){
-    //傳送訊息
-    echo = {
-      "type": "sticker",
-      "packageId": "446",
-      "stickerId": "1988"
-    }
-  }
-
-
-  else if(msg == "試試新功能"){
-    echo = {
-      "type": "button",
-      "action": {
-        "type": "uri",
-        "label": "Buy a coffee to your friends anywhere",
-        "uri": "http://line.me"
-      },
-      "style": "primary",
-      "adjustMode": "shrink-to-fit"
-    }
-  }
-  else{
-    echo = {
-      "type": "text",
-      "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\" 來了解我是誰!"
-    }
-    return client.replyMessage(event.replyToken, echo);
-  }
+  // if(msg == "拿拿資料就走"){
+  //   //傳送想要拿什麼資訊的選單
+  //   echo = getInfo()
+  // } 
+  // else if(msg == "更深入的了解我是誰"){
+  //   //傳送訊息
+  //   echo = {
+  //     "type": "sticker",
+  //     "packageId": "446",
+  //     "stickerId": "1988"
+  //   }
+  // }
+  // else{
+  //   echo = {
+  //     "type": "text",
+  //     "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\" 來了解我是誰!"
+  //   }
+  //   return client.replyMessage(event.replyToken, echo);
+  // }
   return client.replyMessage(event.replyToken, echo);
 }
 
