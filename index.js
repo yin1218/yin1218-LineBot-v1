@@ -39,7 +39,7 @@ function handleEvent(event) {
   if(msg == "拿拿資料就走"){
     echo = {
       "type": "flex", 
-      "altText": "幫你的flex message取一個名字",
+      "altText": "My related document",
       "content": {
           "type": "bubble",
           "hero": {
@@ -47,10 +47,6 @@ function handleEvent(event) {
             "size": "full",
             "aspectRatio": "20:13",
             "aspectMode": "cover",
-            "action": {
-              "type": "uri",
-              "uri": "http://linecorp.com/"
-            },
             "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
           },
           "body": {
