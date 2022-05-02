@@ -35,7 +35,7 @@ function handleEvent(event) {
       "type": "text",
       "text": "你想要什麼呢"
     }
-    return client.replyMessage(event.replyToken, returnSticker);
+    return client.replyMessage(event.replyToken, echo);
   } 
   else if(msg == "更深入的了解我是誰"){
     //傳送訊息
@@ -45,6 +45,13 @@ function handleEvent(event) {
       "stickerId": "1988"
     }
     return client.replyMessage(event.replyToken, returnSticker);
+  }
+  else{
+    const echo = {
+      "type": "text",
+      "text": "給我點具體的指示吧QAQ"
+    }
+    return client.replyMessage(event.replyToken, echo);
   }
 }
 
