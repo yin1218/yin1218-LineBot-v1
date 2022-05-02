@@ -47,10 +47,6 @@ function handleEvent(event) {
           "size": "full",
           "aspectRatio": "20:13",
           "aspectMode": "cover",
-          "action": {
-            "type": "uri",
-            "uri": "http://linecorp.com/"
-          },
           "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
         },
         "body": {
@@ -108,18 +104,24 @@ function handleEvent(event) {
   }
   else if(msg == "更深入的了解我是誰"){
     //傳送訊息
-    echo = {
-      "type": "sticker",
-      "packageId": "446",
-      "stickerId": "1988"
-    }
+    let multireply = [
+      {
+        "type": "sticker",
+        "packageId": "446",
+        "stickerId": "1988"  
+      },
+      {
+        "type": "text",
+        "text": "傳送兩則訊息"
+      }
+    ]
+    return client.replyMessage(event.replyToken, multireply);
   }
   else{
     echo = {
       "type": "text",
       "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\" 來了解我是誰!"
     }
-    return client.replyMessage(event.replyToken, echo);
   }
   return client.replyMessage(event.replyToken, echo);
 }
