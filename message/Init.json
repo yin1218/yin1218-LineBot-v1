@@ -42,9 +42,9 @@
             "style": "link",
             "height": "sm",
             "action": {
-              "type": "uri",
-              "label": "Github",
-              "uri": "https://github.com/yin1218"
+              "type": "message",
+              "label": "更深入的了解我是誰",
+              "text": "更深入的了解我是誰"
             }
           }
         ],
