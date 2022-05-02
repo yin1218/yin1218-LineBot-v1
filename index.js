@@ -35,8 +35,14 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
+  //determine which message to reply
+  let msg = event.message.text
+  if(event.message.text === '彩蛋'){
+    msg = '成功觸發彩蛋！'
+  }
+
   // create a echoing text message
-  const echo = { type: 'text', text: event.message.text };
+  const echo = { type: 'text', text: msg };
 
   // use reply API
   return client.replyMessage(event.replyToken, echo);
