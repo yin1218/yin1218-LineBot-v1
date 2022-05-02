@@ -3,21 +3,15 @@
 const line = require('@line/bot-sdk');
 const express = require('express');
 
-// create LINE SDK config from env variables
 const config = {
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
   channelSecret: process.env.CHANNEL_SECRET,
 };
 
-// create LINE SDK client
 const client = new line.Client(config);
 
-// create Express app
-// about Express itself: https://expressjs.com/
 const app = express();
 
-// register a webhook handler with middleware
-// about the middleware, please refer to doc
 app.post('/callback', line.middleware(config), (req, res) => {
   Promise
     .all(req.body.events.map(handleEvent))
@@ -34,19 +28,33 @@ function handleEvent(event) {
     // ignore non-text-message event
     return Promise.resolve(null);
   }
-
-  //determine which message to reply
   let msg = event.message.text
-  if(event.message.text === '彩蛋'){
-    msg = '成功觸發彩蛋！'
+  if(msg == "拿拿資料就走"){
+    //傳送想要拿什麼資訊的選單
+    const echo = {
+      "type": "text",
+      "text": "你想要什麼呢"
+    }
+    return client.replyMessage(event.replyToken, returnSticker);
+  } 
+  else if(msg == "更深入的了解我是誰"){
+    //傳送訊息
+    const returnSticker = {
+      "type": "sticker",
+      "packageId": "446",
+      "stickerId": "1988"
+    }
+    return client.replyMessage(event.replyToken, returnSticker);
   }
-
-  // create a echoing text message
-  const echo = { type: 'text', text: msg };
-
-  // use reply API
-  return client.replyMessage(event.replyToken, echo);
 }
+
+
+
+
+
+
+
+
 
 // listen on port
 const port = process.env.PORT || 3000;
