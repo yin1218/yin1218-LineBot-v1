@@ -1,6 +1,6 @@
 'use strict';
 // import someName from "./some/path/to/your/file.json";
-import {getInfo} from './message/Document.js'
+// import {getInfo} from './message/Document.js'
 
 const line = require('@line/bot-sdk');
 const express = require('express');
