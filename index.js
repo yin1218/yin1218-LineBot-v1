@@ -64,6 +64,7 @@ function handleEvent(event) {
       "type": "text",
       "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\" 來了解我是誰!"
     }
+    return client.replyMessage(event.replyToken, echo);
   }
   return client.replyMessage(event.replyToken, echo);
 }
