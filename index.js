@@ -47,10 +47,12 @@ function handleEvent(event) {
   let msg = event.message.text
   let echo = {}
   // first
-  if(msg == "拿拿資料就走"){
+  if(msg == "開始了解"){
+
+  }
+  else if(msg == "拿拿資料就走"){
     echo = documents
   }
-
 
   else if(msg == "更深入的了解我是誰"){
     //傳送訊息
@@ -60,7 +62,7 @@ function handleEvent(event) {
         "packageId": "446",
         "stickerId": "1988"  
       },
-      documents
+      knowmore
     ]
     return client.replyMessage(event.replyToken, multireply);
   }

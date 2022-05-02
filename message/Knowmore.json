@@ -2,6 +2,7 @@
     "type": "flex",
     "altText": "know more about me",
     "contents": {
+        "type": "bubble",
         "body": {
         "type": "box",
         "layout": "vertical",
