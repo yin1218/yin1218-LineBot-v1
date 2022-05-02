@@ -16,7 +16,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "歡迎歡迎！你想要做什麼呢",
+            "text": "歡迎歡迎！熱烈歡迎！",
             "weight": "bold",
             "size": "xl"
           }
@@ -32,9 +32,9 @@
             "style": "link",
             "height": "sm",
             "action": {
-              "type": "uri",
+              "type": "message",
               "label": "Website",
-              "uri": "https://wpbag.vercel.app/"
+              "text": "https://wpbag.vercel.app/"
             }
           },
           {
