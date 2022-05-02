@@ -1,4 +1,6 @@
 'use strict';
+// import someName from "./some/path/to/your/file.json";
+import {getInfo} from './message/Document.js'
 
 const line = require('@line/bot-sdk');
 const express = require('express');
@@ -30,12 +32,10 @@ function handleEvent(event) {
   }
   let msg = event.message.text
   let echo = {}
+  //first
   if(msg == "拿拿資料就走"){
     //傳送想要拿什麼資訊的選單
-    echo = {
-      "type": "text",
-      "text": "你想要什麼呢"
-    }
+    echo = getInfo()
   } 
   else if(msg == "更深入的了解我是誰"){
     //傳送訊息
@@ -45,6 +45,8 @@ function handleEvent(event) {
       "stickerId": "1988"
     }
   }
+
+
   else if(msg == "試試新功能"){
     echo = {
       "type": "button",
@@ -60,7 +62,7 @@ function handleEvent(event) {
   else{
     echo = {
       "type": "text",
-      "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\"來了解我是誰!"
+      "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\" 來了解我是誰!"
     }
   }
   return client.replyMessage(event.replyToken, echo);
