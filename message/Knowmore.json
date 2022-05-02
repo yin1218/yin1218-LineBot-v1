@@ -1,57 +1,74 @@
 {
     "type": "flex",
-    "altText": "know more about me",
+    "altText": "this is a flex message",
     "contents": {
-        "type": "bubble",
-        "body": {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
+      },
+      "body": {
         "type": "box",
         "layout": "vertical",
         "contents": [
-            {
+          {
             "type": "text",
-            "text": "你想要問那些問題呢！",
+            "text": "看點東西再走吧！",
             "weight": "bold",
             "size": "xl"
-            }
+          }
         ]
-        },
-        "footer": {
+      },
+      "footer": {
         "type": "box",
         "layout": "vertical",
         "spacing": "sm",
         "contents": [
-            {
+          {
             "type": "button",
             "style": "link",
             "height": "sm",
             "action": {
-                "type": "message",
-                "label": "你的大學在哪裡",
-                "text": "大學位置"
+              "type": "uri",
+              "label": "Website",
+              "uri": "https://wpbag.vercel.app/"
             }
-            },
-            {
+          },
+          {
             "type": "button",
             "style": "link",
             "height": "sm",
             "action": {
-                "type": "message",
-                "label": "為什麼想要申請這個計畫呢",
-                "uri": "申請動機"
+              "type": "uri",
+              "label": "Github",
+              "uri": "https://github.com/yin1218"
             }
-            },
-            {
+          },
+          {
             "type": "button",
             "action": {
-                "type": "uri",
-                "label": "Album",
-                "uri": "https://www.flickr.com/photos/195209755@N02/albums"
+              "type": "uri",
+              "label": "Resume",
+              "uri": "https://drive.google.com/file/d/1ucen8T9KSt9F1-efkBs9GDsGbHRVmxtg/view?usp=sharing"
             },
             "height": "sm",
             "style": "link"
-            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Album",
+              "uri": "https://www.flickr.com/photos/195209755@N02/albums"
+            },
+            "height": "sm",
+            "style": "link"
+          }
         ],
         "flex": 0
-        }
+      }
     }
-    }
+  }
