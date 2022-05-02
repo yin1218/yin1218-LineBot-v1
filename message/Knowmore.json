@@ -59,6 +59,16 @@
             },
             "height": "sm",
             "style": "link"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "給我聽聽你最愛的歌",
+              "text": "音樂 No.1"
+            },
+            "height": "sm",
+            "style": "link"
           }
         ],
         "flex": 0
