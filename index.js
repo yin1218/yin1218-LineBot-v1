@@ -27,7 +27,8 @@ app.post('/callback', line.middleware(config), (req, res) => {
 
 //return message storage
 const documents = require('./message/Document.json');
-const knowmore = require('./message/Knowmore.json')
+const knowmore = require('./message/Knowmore.json');
+const exception = require('./message/Exception.json')
 
 // event handler
 function handleEvent(event) {
@@ -66,10 +67,7 @@ function handleEvent(event) {
 
 
   else{
-    echo = {
-      "type": "text",
-      "text": "我不知道你在說什麼QQ 但你可以輸入 \"start\" 來了解我是誰!"
-    }
+    echo = exception
   }
   return client.replyMessage(event.replyToken, echo);
 }
