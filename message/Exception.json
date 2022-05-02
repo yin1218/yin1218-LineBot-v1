@@ -14,11 +14,13 @@
             },
             {
               "type": "text",
-              "text": "但你可以點選以下的按鈕"
+              "text": "但你可以點選以下的按鈕",
+              "size": "sm"
             },
             {
               "type": "text",
-              "text": "來了解可以做的操作"
+              "text": "來了解可以做的操作",
+              "size": "sm"
             }
           ],
           "borderColor": "#BB1324",
