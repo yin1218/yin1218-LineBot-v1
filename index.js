@@ -28,7 +28,8 @@ app.post('/callback', line.middleware(config), (req, res) => {
 //return message storage
 const documents = require('./message/Document.json');
 const knowmore = require('./message/Knowmore.json');
-const exception = require('./message/Exception.json')
+const exception = require('./message/Exception.json');
+const firstMsg = require('./message/Init.json')
 
 // event handler
 function handleEvent(event) {
@@ -48,7 +49,7 @@ function handleEvent(event) {
   let echo = {}
   // first
   if(msg == "開始了解"){
-
+    echo = firstMsg
   }
   else if(msg == "拿拿資料就走"){
     echo = documents
