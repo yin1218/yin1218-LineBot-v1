@@ -24,6 +24,10 @@ app.post('/callback', line.middleware(config), (req, res) => {
     });
 });
 
+
+//return message storage
+const documents = require('./message/Document.json');
+
 // event handler
 function handleEvent(event) {
   if (event.type !== 'message' || event.message.type !== 'text') {
@@ -37,71 +41,74 @@ function handleEvent(event) {
   }
   // first
   if(msg == "拿拿資料就走"){
-    echo = {
-      "type": "flex",
-      "altText": "this is a flex message",
-      "contents": {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "size": "full",
-          "aspectRatio": "20:13",
-          "aspectMode": "cover",
-          "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "看點東西再走吧！",
-              "weight": "bold",
-              "size": "xl"
-            }
-          ]
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "button",
-              "style": "link",
-              "height": "sm",
-              "action": {
-                "type": "uri",
-                "label": "Website",
-                "uri": "https://wpbag.vercel.app/"
-              }
-            },
-            {
-              "type": "button",
-              "style": "link",
-              "height": "sm",
-              "action": {
-                "type": "uri",
-                "label": "Github",
-                "uri": "https://github.com/yin1218"
-              }
-            },
-            {
-              "type": "button",
-              "action": {
-                "type": "uri",
-                "label": "Album",
-                "uri": "https://www.flickr.com/photos/195209755@N02/albums"
-              },
-              "height": "sm",
-              "style": "link"
-            }
-          ],
-          "flex": 0
-        }
-      }
-    }
+    // echo = {
+    //   "type": "flex",
+    //   "altText": "this is a flex message",
+    //   "contents": {
+    //     "type": "bubble",
+    //     "hero": {
+    //       "type": "image",
+    //       "size": "full",
+    //       "aspectRatio": "20:13",
+    //       "aspectMode": "cover",
+    //       "url": "https://live.staticflickr.com/65535/51940460694_a624490579_b.jpg"
+    //     },
+    //     "body": {
+    //       "type": "box",
+    //       "layout": "vertical",
+    //       "contents": [
+    //         {
+    //           "type": "text",
+    //           "text": "看點東西再走吧！",
+    //           "weight": "bold",
+    //           "size": "xl"
+    //         }
+    //       ]
+    //     },
+    //     "footer": {
+    //       "type": "box",
+    //       "layout": "vertical",
+    //       "spacing": "sm",
+    //       "contents": [
+    //         {
+    //           "type": "button",
+    //           "style": "link",
+    //           "height": "sm",
+    //           "action": {
+    //             "type": "uri",
+    //             "label": "Website",
+    //             "uri": "https://wpbag.vercel.app/"
+    //           }
+    //         },
+    //         {
+    //           "type": "button",
+    //           "style": "link",
+    //           "height": "sm",
+    //           "action": {
+    //             "type": "uri",
+    //             "label": "Github",
+    //             "uri": "https://github.com/yin1218"
+    //           }
+    //         },
+    //         {
+    //           "type": "button",
+    //           "action": {
+    //             "type": "uri",
+    //             "label": "Album",
+    //             "uri": "https://www.flickr.com/photos/195209755@N02/albums"
+    //           },
+    //           "height": "sm",
+    //           "style": "link"
+    //         }
+    //       ],
+    //       "flex": 0
+    //     }
+    //   }
+    // }
+    echo = documents
   }
+
+
   else if(msg == "更深入的了解我是誰"){
     //傳送訊息
     let multireply = [
@@ -117,6 +124,8 @@ function handleEvent(event) {
     ]
     return client.replyMessage(event.replyToken, multireply);
   }
+
+
   else{
     echo = {
       "type": "text",

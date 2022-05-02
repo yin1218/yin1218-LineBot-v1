@@ -1,7 +1,7 @@
 export const getInfo = () => {
     return {
         "type": "flex", 
-        "altText": "幫你的flex message取一個名字",
+        "altText": "documents",
         "content": {
             "type": "bubble",
             "hero": {
