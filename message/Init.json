@@ -33,8 +33,8 @@
             "height": "sm",
             "action": {
               "type": "message",
-              "label": "Website",
-              "text": "https://wpbag.vercel.app/"
+              "label": "拿拿資料就走",
+              "text": "拿拿資料就走"
             }
           },
           {
