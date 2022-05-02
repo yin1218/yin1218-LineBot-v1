@@ -51,6 +51,16 @@
             "type": "button",
             "action": {
               "type": "uri",
+              "label": "Resume",
+              "uri": "https://drive.google.com/file/d/1ucen8T9KSt9F1-efkBs9GDsGbHRVmxtg/view?usp=sharing"
+            },
+            "height": "sm",
+            "style": "link"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
               "label": "Album",
               "uri": "https://www.flickr.com/photos/195209755@N02/albums"
             },
