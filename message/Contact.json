@@ -1,6 +1,6 @@
 {
     "type": "flex",
-    "altText": "know more about me",
+    "altText": "Contact Information",
     "contents": {
       "type": "bubble",
       "body": {
@@ -9,7 +9,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "歡迎透過以下方式聯繫！",
+            "text": "看點東西再走吧！",
             "weight": "bold",
             "size": "xl"
           }
@@ -26,8 +26,8 @@
             "height": "sm",
             "action": {
               "type": "uri",
-              "label": "Facebook",
-              "uri": "https://www.facebook.com/wpbag/"
+              "label": "Website",
+              "uri": "https://wpbag.vercel.app/"
             }
           },
           {
@@ -36,16 +36,16 @@
             "height": "sm",
             "action": {
               "type": "uri",
-              "label": "LinkedIn",
-              "uri": "https://www.linkedin.com/in/wpbag/"
+              "label": "Github",
+              "uri": "https://github.com/yin1218"
             }
           },
           {
             "type": "button",
             "action": {
-              "type": "message",
-              "label": "自己最喜歡的特質有哪些",
-              "text": "優勢簡述"
+              "type": "uri",
+              "label": "Resume",
+              "uri": "https://drive.google.com/file/d/1ucen8T9KSt9F1-efkBs9GDsGbHRVmxtg/view?usp=sharing"
             },
             "height": "sm",
             "style": "link"
@@ -53,9 +53,9 @@
           {
             "type": "button",
             "action": {
-              "type": "message",
-              "label": "想問的問題不在上面嗎...QQ",
-              "text": "聯繫方式"
+              "type": "uri",
+              "label": "Album",
+              "uri": "https://www.flickr.com/photos/195209755@N02/albums"
             },
             "height": "sm",
             "style": "link"
