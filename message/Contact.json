@@ -26,8 +26,8 @@
             "height": "sm",
             "action": {
               "type": "uri",
-              "label": "Website",
-              "uri": "https://wpbag.vercel.app/"
+              "label": "Facebook",
+              "uri": "https://www.facebook.com/wpbag/"
             }
           },
           {
@@ -36,8 +36,8 @@
             "height": "sm",
             "action": {
               "type": "uri",
-              "label": "Github",
-              "uri": "https://github.com/yin1218"
+              "label": "LinkedIn",
+              "uri": "https://www.linkedin.com/in/wpbag/"
             }
           },
           {
