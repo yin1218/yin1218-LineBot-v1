@@ -73,13 +73,13 @@ function handleEvent(event) {
   else if(msg == "大學位置"){
     let multireply = []
     multireply.push(collegeLoca)
-    multireply = multireply.concat(documents)
+    multireply = multireply.concat(knowmore)
     return client.replyMessage(event.replyToken, multireply)
   }
 
   else if(msg == "申請動機"){
     let multireply = motivation
-    multireply = multireply.concat(documents)
+    multireply = multireply.concat(knowmore)
     return client.replyMessage(event.replyToken, multireply)
   }
 
