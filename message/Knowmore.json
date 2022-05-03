@@ -54,16 +54,6 @@
             "type": "button",
             "action": {
               "type": "message",
-              "label": "做過收穫最多的專案是什麼",
-              "text": "專案 No.1"
-            },
-            "height": "sm",
-            "style": "link"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "message",
               "label": "想問的問題不在上面嗎...QQ",
               "text": "聯繫方式"
             },

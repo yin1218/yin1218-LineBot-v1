@@ -1,0 +1,37 @@
+{
+    "type": "flex",
+    "altText": "know more about me",
+    "contents": {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "歡迎透過以下方式聯繫！",
+            "weight": "bold",
+            "size": "xl"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "link",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "Facebook",
+              "uri": "https://www.facebook.com/wpbag/"
+            }
+          }
+        ],
+        "flex": 0
+      }
+    }
+  }

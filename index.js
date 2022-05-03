@@ -33,6 +33,7 @@ const firstMsg = require('./message/Init.json')
 const collegeLoca = require('./message/CollegeLoco.json')
 const motivation = require('./message/Motivation.json')
 const advantage = require('./message/Advantage.json')
+const contact = require('./message/Contact.json')
 
 // event handler
 function handleEvent(event) {
@@ -90,13 +91,12 @@ function handleEvent(event) {
     return client.replyMessage(event.replyToken, multireply)
   }
 
-  // else if(msg == "專案 No.1"){
+  else if(msg == "聯繫方式"){
+    let multireply = contact
+    multireply = multireply.concat(knowmore)
+    return client.replyMessage(event.replyToken, multireply)
 
-  // }
-
-  // else if(msg == "音樂 No.1"){
-
-  // }
+  }
 
   else{
     echo = exception
