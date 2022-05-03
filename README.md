@@ -2,6 +2,10 @@
 
 An example LINE bot just to echo messages
 
+## How to view demo
+Just somply add this line@ account!
+ ![](https://i.imgur.com/xC8zK6b.png)
+
 ## How to use
 
 ### Install deps
