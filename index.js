@@ -95,7 +95,6 @@ function handleEvent(event) {
     let multireply = contact
     multireply = multireply.concat(knowmore)
     return client.replyMessage(event.replyToken, multireply)
-
   }
 
   else{
