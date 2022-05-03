@@ -64,8 +64,8 @@
             "type": "button",
             "action": {
               "type": "message",
-              "label": "給我聽聽你最愛的歌",
-              "text": "音樂 No.1"
+              "label": "想問的問題不在上面嗎...QQ",
+              "text": "聯繫方式"
             },
             "height": "sm",
             "style": "link"
