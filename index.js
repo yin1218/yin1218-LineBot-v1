@@ -71,7 +71,7 @@ function handleEvent(event) {
   }
 
   else if(msg == "大學位置"){
-    echo = collegeLoca;
+    echo = collegeLoca
   }
 
   else if(msg == "申請動機"){
