@@ -29,6 +29,36 @@
               "label": "Facebook",
               "uri": "https://www.facebook.com/wpbag/"
             }
+          },
+          {
+            "type": "button",
+            "style": "link",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "LinkedIn",
+              "uri": "https://www.linkedin.com/in/wpbag/"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "自己最喜歡的特質有哪些",
+              "text": "優勢簡述"
+            },
+            "height": "sm",
+            "style": "link"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "想問的問題不在上面嗎...QQ",
+              "text": "聯繫方式"
+            },
+            "height": "sm",
+            "style": "link"
           }
         ],
         "flex": 0
